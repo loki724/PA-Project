@@ -1,0 +1,100 @@
+{
+    "champion_model": "Gradient Boosting Regressor",
+    "comparison": [
+        {
+            "Model": "Gradient Boosting Regressor",
+            "MAE": 0.4124,
+            "MSE": 0.4242,
+            "RMSE": 0.6513,
+            "R2": 0.7653
+        },
+        {
+            "Model": "Random Forest Regressor",
+            "MAE": 0.421,
+            "MSE": 0.4355,
+            "RMSE": 0.6599,
+            "R2": 0.7591
+        },
+        {
+            "Model": "Linear Regression",
+            "MAE": 0.484,
+            "MSE": 0.5226,
+            "RMSE": 0.7229,
+            "R2": 0.7109
+        }
+    ],
+    "champion_metrics": {
+        "MAE": 0.4124,
+        "MSE": 0.4242,
+        "RMSE": 0.6513,
+        "R2": 0.7653
+    },
+    "thresholds": {
+        "median_co": 1.9,
+        "co_90th_percentile": 4.2
+    },
+    "feature_importances": [
+        {
+            "Feature": "PT08.S2(NMHC)",
+            "Importance": 0.8323
+        },
+        {
+            "Feature": "PT08.S1(CO)",
+            "Importance": 0.0408
+        },
+        {
+            "Feature": "Month",
+            "Importance": 0.0346
+        },
+        {
+            "Feature": "Hour",
+            "Importance": 0.0268
+        },
+        {
+            "Feature": "T",
+            "Importance": 0.0192
+        },
+        {
+            "Feature": "PT08.S4(NO2)",
+            "Importance": 0.0112
+        },
+        {
+            "Feature": "PT08.S3(NOx)",
+            "Importance": 0.0092
+        },
+        {
+            "Feature": "AH",
+            "Importance": 0.0074
+        },
+        {
+            "Feature": "PT08.S5(O3)",
+            "Importance": 0.007
+        },
+        {
+            "Feature": "DayOfWeek",
+            "Importance": 0.0069
+        },
+        {
+            "Feature": "RH",
+            "Importance": 0.0046
+        }
+    ],
+    "training_metadata": {
+        "train_samples": 6139,
+        "test_samples": 1535,
+        "features_used": [
+            "PT08.S1(CO)",
+            "PT08.S2(NMHC)",
+            "PT08.S3(NOx)",
+            "PT08.S4(NO2)",
+            "PT08.S5(O3)",
+            "T",
+            "RH",
+            "AH",
+            "Hour",
+            "Month",
+            "DayOfWeek"
+        ],
+        "target": "CO(GT)"
+    }
+}
